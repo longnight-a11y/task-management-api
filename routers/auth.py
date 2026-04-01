@@ -17,5 +17,5 @@ def login(user: UserCreate, db: Annotated[Session, Depends(get_db)]):
     if existing is None or not verify_password(user.password, existing.password):
         raise HTTPException(status_code=401, detail="Invalid username or password")
     token = create_token({"sub": str(existing.id)})  
-    # ↑str() because JWT only accepts string values, but our user ID is an int. We can convert it back to int when decoding the token in core.py
+    # ↑str() because JWT only accepts string values, but our user ID is an uuid.
     return {"access_token": token, "token_type": "bearer"}
