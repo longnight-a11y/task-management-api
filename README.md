@@ -85,7 +85,7 @@ Response format:
 1. Clone the repository
 
 ```
-git clone https://github.com/your-username/task-management-api.git
+git clone https://github.com/longnight-a11y/task-management-api.git
 cd task-management-api
 ```
 
