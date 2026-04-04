@@ -140,7 +140,7 @@ uvicorn main:app --reload
 ## How to Use on Swagger UI
 
 1. Create a new user via **POST /users** endpoint
-2. Login via **Authorize** bottun (client_id and client_secret should be blank)
+2. Login via **Authorize** button (client_id and client_secret should be blank)
 3. Access protected endpoints!
 
 ---
